@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { ExperienceComponent } from './resume/experience/experience.component';
+import { EducationComponent } from './resume/education/education.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProjectComponent } from './projects/project/project.component';
     ProjectsComponent,
     ResumeComponent,
     ProjectComponent,
+    ExperienceComponent,
+    EducationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

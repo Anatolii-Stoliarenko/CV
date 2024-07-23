@@ -1,0 +1,9 @@
+/* contact-form.component.css */
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+}
+
+.alert {
+  margin-top: 1rem;
+}

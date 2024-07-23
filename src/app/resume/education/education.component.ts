@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
-import { Education } from '../resume.model';
+import { ResumeService } from '../resume.service';
 
 @Component({
   selector: 'app-education',
@@ -8,5 +8,5 @@ import { Education } from '../resume.model';
   styleUrls: ['./education.component.css'],
 })
 export class EducationComponent {
-  @Input() education?: Education;
+  resumeService = inject(ResumeService);
 }

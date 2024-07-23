@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { ExperienceComponent } from './resume/experience/experience.component';
 import { EducationComponent } from './resume/education/education.component';
+import { SkillsComponent } from './resume/skills/skills.component';
+import { EducationCardComponent } from './resume/education/education-card/education-card.component';
+import { ExperienceCardComponent } from './resume/experience/experience-card/experience-card.component';
+import { SkillsCardComponent } from './resume/skills/skills-card/skills-card.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +35,17 @@ import { EducationComponent } from './resume/education/education.component';
     ProjectComponent,
     ExperienceComponent,
     EducationComponent,
+    SkillsComponent,
+    EducationCardComponent,
+    ExperienceCardComponent,
+    SkillsCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

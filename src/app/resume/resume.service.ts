@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { Education, WorkExperience } from './resume.model';
+import {
+  Education,
+  Skill,
+  SkillCategory,
+  WorkExperience,
+} from './resume.model';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +32,7 @@ export class ResumeService {
       companyName: 'Basement Sp. z o.o.',
       location: 'Warsaw, Poland',
       description:
-        'Focused on Angular development for software projects in the banking and transportation sectors. Utilized Angular, NgRx, TypeScript, JavaScript, HTML, CSS, and SCSS for front-end development.',
+        'Focused on Angular development for software projects in the banking and transportation sectors. Utilized Angular, NgRx (RxJs), TypeScript, HTML, SCSS for front-end development.',
     },
     {
       id: '2',
@@ -61,8 +66,8 @@ export class ResumeService {
     },
     {
       id: '5',
-      startDate: '2015/01',
-      endDate: '2020/12',
+      startDate: '2015',
+      endDate: '2020',
       jobTitle: 'Own construction company',
       companyName: 'Elit-remont',
       location: 'Kiev, Ukraine',
@@ -74,13 +79,70 @@ export class ResumeService {
   education: Education[] = [
     {
       id: '1',
-      startDate: '2006/09',
-      endDate: '2015/06',
+      startDate: '2014',
+      endDate: '2015',
       institution: 'Uzhhorod National University',
       location: 'Uzhhorod, Ukraine',
       description:
-        'Completed a comprehensive program in computer and information sciences, focusing on various aspects of support services, software development, and IT management.',
+        'Obtained master’s degree and complete higher education in the speciality "Information management systems and technologies" and qualification "master of information management systems and technologies, lecturer of computer science',
       title: '',
+      degree: `Master's`,
     },
+    {
+      id: '2',
+      startDate: '2010',
+      endDate: '2014',
+      institution: 'Uzhhorod National University',
+      location: 'Uzhhorod, Ukraine',
+      description:
+        'Completed the full course of State University "Uzhhorod National University" having specialized in "Computer science" and obtained qualification of bachelor of computer sciences',
+
+      title: '',
+      degree: `Bachelor's`,
+    },
+  ];
+
+  languagesSkills: Skill[] = [
+    { id: '1', title: 'English - B2' },
+    { id: '2', title: 'Polish - C1' },
+    { id: '3', title: 'Ukrainian - native' },
+    { id: '4', title: 'Russian - native' },
+    { id: '5', title: 'Hungarian - A2' },
+    { id: '6', title: 'Norwegian - A1' },
+  ];
+
+  programmingSkills: Skill[] = [
+    { id: '7', title: 'HTML' },
+    { id: '8', title: 'CSS' },
+    { id: '16', title: 'SASS/SCSS' },
+    { id: '9', title: 'JavaScript' },
+    { id: '10', title: 'TypeScript' },
+    { id: '11', title: 'Angular' },
+    { id: '12', title: 'RxJs' },
+    { id: '12', title: 'NgRx' },
+    { id: '11', title: 'Angular CLI' },
+    { id: '22', title: 'RESTful APIs' },
+    { id: '14', title: 'Git' },
+    { id: '15', title: 'Hg Mercurial' },
+    { id: '29', title: 'Jira' },
+    { id: '31', title: 'Figma' },
+    { id: '13', title: 'Docker' },
+    { id: '17', title: 'Bootstrap' },
+    { id: '18', title: 'Webpack' },
+    { id: '26', title: 'MongoDB' },
+    { id: '27', title: 'SQL' },
+    { id: '32', title: 'Adobe XD' },
+    { id: '33', title: 'VSCode' },
+    { id: '35', title: 'Prettier' },
+    { id: '36', title: 'Netlify' },
+    { id: '36', title: 'GitHub' },
+  ];
+  professionalSkills: Skill[] = [
+    { id: '13', title: 'Communication' },
+    { id: '14', title: 'Project Management' },
+    { id: '15', title: 'Team Leadership' },
+    { id: '16', title: 'Problem-Solving' },
+    { id: '17', title: 'Technical Proficiency' },
+    { id: '18', title: 'Time Management' },
   ];
 }

@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 
 import { WorkExperience } from '../resume.model';
+import { ResumeService } from '../resume.service';
 
 @Component({
   selector: 'app-experience',
@@ -9,4 +10,5 @@ import { WorkExperience } from '../resume.model';
 })
 export class ExperienceComponent {
   @Input() experience?: WorkExperience;
+  resumeService = inject(ResumeService);
 }

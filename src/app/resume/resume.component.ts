@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+
 import { ResumeService } from './resume.service';
 
 @Component({

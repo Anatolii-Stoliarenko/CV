@@ -16,4 +16,15 @@ export interface Education {
   institution: string;
   location: string;
   description: string;
+  degree: string;
+}
+
+export interface Skill {
+  id: string;
+  title: string; // The specific skill: 'English - B2', 'Communication', 'HTML'
+}
+
+export interface SkillCategory {
+  title: string; // The category: 'languages', 'technologies', 'skills'
+  skills: Skill[];
 }

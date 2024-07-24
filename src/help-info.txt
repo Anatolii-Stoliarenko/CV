@@ -1,0 +1,2 @@
+cd dist/your-project-name
+echo "/*    /index.html   200" > _redirects

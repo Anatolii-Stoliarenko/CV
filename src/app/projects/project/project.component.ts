@@ -10,6 +10,14 @@ import { Project } from '../projects.model';
 export class ProjectComponent {
   @Input() project?: Project;
 
+  openSite() {
+    window.open(this.project?.projectUrl, '_blank');
+  }
+
+  openGitHub() {
+    window.open(this.project?.gitHubUrl, '_blank');
+  }
+
   formatDescription(description: string | undefined): string {
     if (!description) return '';
     // Split the description by newline characters and wrap each part in <p> tags

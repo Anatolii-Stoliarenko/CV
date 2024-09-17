@@ -42,38 +42,38 @@ export class ResumeService {
       companyName: 'Olsvit Sp. z o.o.',
       location: 'Warsaw, Poland',
       description:
-        'Engaged in software development projects, focusing on innovative solutions and system optimization.',
+        'Computer Scientist with expertise in algorithm design, data structures, software development, and problem-solving. Skilled in applying computational theory and advanced programming techniques to innovate and optimize systems across various domains.',
     },
     {
       id: '3',
-      startDate: '2022/02',
-      endDate: '2022/08',
-      jobTitle: 'Construction Engineer',
-      companyName: 'Granar Sp. z o.o.',
-      location: 'Warsaw, Poland',
+      startDate: '2012/02',
+      endDate: '2013/08',
+      jobTitle: 'Editor of the publishing house',
+      companyName: 'National University',
+      location: 'Uzhhorod, Ukraine',
       description:
-        'Oversaw construction projects, ensuring compliance with engineering standards and safety regulations.',
+        'Experienced editor managing content creation, refinement, and publication processes. Specializing in editorial oversight, content quality control, and collaboration with authors to ensure high standards of writing and timely publication.',
     },
-    {
-      id: '4',
-      startDate: '2020/05',
-      endDate: '2021/12',
-      jobTitle: 'Construction Engineer',
-      companyName: 'Block-PM Sp. z o.o.',
-      location: 'Warsaw, Poland',
-      description:
-        'Managed construction activities, coordinated with project teams, and ensured timely project completion.',
-    },
-    {
-      id: '5',
-      startDate: '2015',
-      endDate: '2020',
-      jobTitle: 'Own construction company',
-      companyName: 'Elit-remont',
-      location: 'Kiev, Ukraine',
-      description:
-        'Owned and operated a construction company, managing various construction projects from inception to completion.',
-    },
+    // {
+    //   id: '4',
+    //   startDate: '2020/05',
+    //   endDate: '2021/12',
+    //   jobTitle: 'Construction Engineer',
+    //   companyName: 'Block-PM Sp. z o.o.',
+    //   location: 'Warsaw, Poland',
+    //   description:
+    //     'Managed construction activities, coordinated with project teams, and ensured timely project completion.',
+    // },
+    // {
+    //   id: '5',
+    //   startDate: '2015',
+    //   endDate: '2020',
+    //   jobTitle: 'Own construction company',
+    //   companyName: 'Elit-remont',
+    //   location: 'Kiev, Ukraine',
+    //   description:
+    //     'Owned and operated a construction company, managing various construction projects from inception to completion.',
+    // },
   ];
 
   education: Education[] = [
@@ -114,25 +114,36 @@ export class ResumeService {
   programmingSkills: Skill[] = [
     { id: '7', title: 'HTML' },
     { id: '8', title: 'CSS' },
-    { id: '16', title: 'SASS/SCSS' },
-    { id: '9', title: 'JavaScript' },
-    { id: '10', title: 'TypeScript' },
+    { id: '16', title: 'SCSS' },
+
+    { id: '16', title: 'SASS' },
+    { id: '16', title: 'JavaScript' },
+    { id: '16', title: 'TypeScript' },
+
+    { id: '9', title: 'Node.js' },
+    { id: '10', title: 'Swagger' },
     { id: '11', title: 'Angular' },
-    { id: '12', title: 'RxJs' },
+
+    { id: '12', title: 'RxJS' },
     { id: '12', title: 'NgRx' },
     { id: '11', title: 'Angular CLI' },
+
     { id: '22', title: 'RESTful APIs' },
     { id: '14', title: 'Git' },
     { id: '15', title: 'Hg Mercurial' },
+
     { id: '29', title: 'Jira' },
     { id: '31', title: 'Figma' },
     { id: '13', title: 'Docker' },
+
     { id: '17', title: 'Bootstrap' },
     { id: '18', title: 'Webpack' },
     { id: '26', title: 'MongoDB' },
+
     { id: '27', title: 'SQL' },
     { id: '32', title: 'Adobe XD' },
     { id: '33', title: 'VSCode' },
+
     { id: '35', title: 'Prettier' },
     { id: '36', title: 'Netlify' },
     { id: '36', title: 'GitHub' },

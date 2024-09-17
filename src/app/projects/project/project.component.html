@@ -1,15 +1,30 @@
 <!-- Project Card 1-->
-<div *ngIf="project">
+<!-- <div *ngIf="project">
   <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
     <div class="card-body p-0">
       <div class="d-flex align-items-center">
         <div class="p-5">
           <h2 class="fw-bolder">{{ project.title }}</h2>
-          <div [innerHTML]="formatDescription(project.description)"></div>
-          <p>
+          <div [innerHTML]="formatDescription(project.description)" class="description"></div> -->
+<!-- <p>
             <a [href]="project.projectUrl" target="_blank">Go to Site</a>
           </p>
-          <p><a [href]="project.gitHubUrl" target="_blank">Go to GitHub</a></p>
+          <p><a [href]="project.gitHubUrl" target="_blank">Go to GitHub</a></p> -->
+<!-- <div id="container">
+            <button class="learn-more" (click)="openSite()">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">WebSite</span>
+            </button>
+
+            <button class="learn-more" (click)="openGitHub()">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">HitHub</span>
+            </button>
+          </div>
         </div>
         <img
           class="img-fluid"
@@ -19,6 +34,54 @@
       </div>
     </div>
   </div>
-</div>
+
+  
+</div> -->
 <!-- src="https://dummyimage.com/300x400/343a40/6c757d" -->
 <!--  href="https://ng-medium-clone.netlify.app/" -->
+
+<div *ngIf="project">
+  <div class="wrap animate pop">
+    <div class="overlay">
+      <div class="overlay-content animate slide-left delay-2">
+        <h1 class="animate slide-left pop delay-4">{{ project.title }}</h1>
+        <p
+          [innerHTML]="project.technology"
+          class="animate slide-left pop delay-5"
+          style="color: white; margin-bottom: 2.5rem"
+        ></p>
+      </div>
+      <div
+        class="image-content animate slide delay-5"
+        [ngStyle]="{
+          'background-image': 'url(' + project.imageBigUrl + ')'
+        }"
+      ></div>
+      <div class="dots animate">
+        <div class="dot animate slide-up delay-6"></div>
+        <div class="dot animate slide-up delay-7"></div>
+        <div class="dot animate slide-up delay-8"></div>
+      </div>
+    </div>
+    <div class="text">
+      <img class="inset" [src]="project.imageUrl" alt="" />
+      <div [innerHTML]="project.description"></div>
+      <!-- buttons to site and GitHub -->
+      <div id="container">
+        <button class="learn-more" (click)="openSite()">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">WebSite</span>
+        </button>
+
+        <button class="learn-more" (click)="openGitHub()">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">HitHub</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

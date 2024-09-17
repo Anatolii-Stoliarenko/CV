@@ -10,17 +10,37 @@ export class ProjectService {
 
   projects: Project[] = [
     {
-      id: '1',
+      id: '6',
+      title: 'Booking-API',
+      description: `This project is an API-based reservation system built with Node.js, and MongoDB.
+                    - User authentication and role-based access control
+                    - Create, update, and manage reservations via RESTful API`,
+      imageUrl: 'assets/api.png',
+      projectUrl: 'https://reservation-api-gamma.vercel.app/reservations',
+      gitHubUrl: 'https://github.com/Anatolii-Stoliarenko/reservation-api',
+    },
+    {
+      id: '5',
+      title: 'Booking',
+      description: `This project is an Angular and NgRx-based reservation system.
+                    - User authentication and registration
+                    - Create, edit, and manage reservations`,
+      imageUrl: 'assets/booking.png',
+      projectUrl: 'https://foksal.vercel.app//',
+      gitHubUrl: 'https://github.com/Anatolii-Stoliarenko/churchApp',
+    },
+    {
+      id: '3',
       title: 'Medium clone',
       description: `This project is an Angular and NgRx-based clone of the RealWorld.io web application.
                     - User authentication and registration
                     - Article creation, editing, and deletion`,
-      imageUrl: 'assets/medium.png',
+      imageUrl: 'assets/medium-clone.png',
       projectUrl: 'https://ng-medium-clone.netlify.app/',
       gitHubUrl: 'https://github.com/Anatolii-Stoliarenko/medium-clone',
     },
     {
-      id: '3',
+      id: '1',
       title: 'Easy task',
       description: `Task Management: Create, edit, and delete tasks with an easy-to-use interface.
                     Due Dates and Reminders: Set due dates for tasks and receive reminders to stay on track.`,

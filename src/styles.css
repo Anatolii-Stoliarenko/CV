@@ -10,6 +10,13 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.description {
+  text-align: justify; /* Ensures even spacing on both sides */
+  line-height: 1.6; /* Improves readability by increasing line spacing */
+  text-justify: inter-word; /* Improves justification for larger text blocks */
+}
+
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;

@@ -39,7 +39,7 @@ button {
 button.learn-more {
   width: 10rem;
   height: auto;
-  margin-right: 1rem;
+  margin-right: 3rem;
   margin-bottom: 10px;
 }
 button.learn-more .circle {
@@ -118,11 +118,12 @@ button:hover .button-text {
     grid-area: main;
     align-self: center;
     justify-self: center;
+    justify-content: space-evenly;
   }
 }
 
-/* new card */
 /*  */
+/* new card */
 /*  */
 
 * {

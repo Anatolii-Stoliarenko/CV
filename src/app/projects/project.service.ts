@@ -13,132 +13,61 @@ export class ProjectService {
       id: '6',
       title: 'Booking API',
       technology: 'Node.js <em>MongoDB</em>',
+      imageUrl: '',
+      imageBigUrl:
+        'https://www.ibexa.co/var/site/storage/images/_aliases/ibexa_content_full/3/4/1/0/300143-1-eng-GB/d4255a27c1fa-AdobeStock_261705271_What-is-an-API.jpeg',
+      projectUrl: 'https://reservation-api-gamma.vercel.app/reservations',
+      gitHubUrl: 'https://github.com/Anatolii-Stoliarenko/reservation-api',
       description: `
 
 <p>The <strong>Booking API</strong> is a powerful and scalable backend solution designed for managing reservations across various domains such as events, meetings, spaces, or resources. Built using modern web technologies, this API enables seamless integration, allowing clients to create, update, and manage reservations while handling user authentication, roles, and scheduling conflicts efficiently.</p>
 
-<h5>Key Features:</h5>
-<ul>
-  <li><strong>User Authentication and Role Management:</strong>
+
+  <strong>User Authentication and Role Management:</strong>
     <ul>
       <li>Supports user registration and login via JWT (JSON Web Tokens).</li>
       <li>Role-based access control (RBAC), ensuring that only authorized users can manage or view reservations.</li>
       <li>Different roles such as Admin, Organizer, and User with specific access permissions.</li>
     </ul>
-  </li>
-  
-  <li><strong>Reservation Management:</strong>
+   
+  <strong>Reservation Management:</strong>
     <ul>
       <li>Allows users to create, update, delete, and view reservations.</li>
       <li>Reservation details include start date, end date, time slots, location, and user information.</li>
       <li>Supports recurring reservations (e.g., weekly, monthly).</li>
       <li>Handles scheduling conflicts with existing reservations.</li>
     </ul>
-  </li>
-  
-  <li><strong>Comprehensive Search and Filter Capabilities:</strong>
+    
+  <strong>Comprehensive Search and Filter Capabilities:</strong>
     <ul>
       <li>Users can search for available reservations based on filters like date, time, location, or user.</li>
       <li>Supports advanced filtering and sorting of reservations to quickly find relevant data.</li>
     </ul>
-  </li>
-  
-  <li><strong>API Documentation with Swagger:</strong>
-    <ul>
-      <li>Fully documented API using Swagger, allowing easy integration for developers.</li>
-      <li>Includes detailed endpoints, request/response examples, and error codes to help developers integrate the API into their applications.</li>
-    </ul>
-  </li>
-
-  <li><strong>Data Security and Validation:</strong>
-    <ul>
-      <li>Input validation ensures only valid data is processed by the API.</li>
-      <li>Includes secure password handling (hashed passwords with salts).</li>
-      <li>Protected endpoints requiring valid JWT tokens for authorized access.</li>
-    </ul>
-  </li>
-
-  <li><strong>Notifications and Webhooks:</strong>
+    
+  <strong>Notifications and Webhooks:</strong>
     <ul>
       <li>Integration with notification services (such as email or SMS) to send reminders and confirmations for reservations.</li>
       <li>Supports webhooks to notify external services when a reservation is created, updated, or canceled.</li>
     </ul>
-  </li>
-
-  <li><strong>Scalability and Performance:</strong>
+ 
+  <strong>Scalability and Performance:</strong>
     <ul>
       <li>Designed with scalability in mind to handle a large number of concurrent users and reservations.</li>
       <li>Optimized for performance with efficient querying and caching where needed.</li>
     </ul>
-  </li>
-
-  <li><strong>External Service Integration:</strong>
+  
+  <strong>External Service Integration:</strong>
     <ul>
       <li>Can be integrated with payment gateways for paid reservations (e.g., event tickets, room bookings).</li>
       <li>Integrated with external calendar systems like Google Calendar for seamless event management.</li>
     </ul>
-  </li>
 
-  <li><strong>Reports and Analytics:</strong>
+ <strong>Reports and Analytics:</strong>
     <ul>
       <li>Provides reports and analytics to track reservation trends, cancellations, and user activity.</li>
       <li>Admin users can generate CSV or PDF reports for data analysis.</li>
     </ul>
-  </li>
-</ul>
-
-<h5>Technology Stack:</h5>
-<ul>
-  <li><strong>Backend Framework:</strong> Node.js with Express.js</li>
-  <li><strong>Database:</strong> MongoDB (NoSQL), with support for relational databases if needed</li>
-  <li><strong>Authentication:</strong> JWT for stateless, secure user sessions</li>
-  <li><strong>Documentation:</strong> Swagger UI for detailed API documentation</li>
-  <li><strong>Caching:</strong> Redis or in-memory cache for performance improvements</li>
-  <li><strong>Validation:</strong> Input validation using libraries like Joi or express-validator</li>
-</ul>
-
-<h2>Example API Endpoints:</h2>
-<ul>
-  <li><strong>Authentication:</strong>
-    <ul>
-      <li><code>POST /api/auth/register</code>: Register a new user</li>
-      <li><code>POST /api/auth/login</code>: Login and receive JWT token</li>
-    </ul>
-  </li>
-  
-  <li><strong>Reservations:</strong>
-    <ul>
-      <li><code>GET /api/reservations</code>: Get all reservations with optional filters (e.g., by date, location)</li>
-      <li><code>POST /api/reservations</code>: Create a new reservation</li>
-      <li><code>PUT /api/reservations/:id</code>: Update an existing reservation</li>
-      <li><code>DELETE /api/reservations/:id</code>: Delete a reservation</li>
-    </ul>
-  </li>
-
-  <li><strong>Users:</strong>
-    <ul>
-      <li><code>GET /api/users</code>: Retrieve a list of users (Admin only)</li>
-      <li><code>GET /api/users/:id</code>: Retrieve user details by ID</li>
-      <li><code>PUT /api/users/:id</code>: Update user profile</li>
-    </ul>
-  </li>
-</ul>
-
-<h5>Use Cases:</h5>
-<ul>
-  <li><strong>Event Booking:</strong> Users can book seats or tickets for events, with an easy-to-use reservation system that handles recurring bookings and sends reminders.</li>
-  <li><strong>Meeting Room Scheduling:</strong> Users can schedule rooms for meetings, checking availability and avoiding conflicts.</li>
-  <li><strong>Resource Management:</strong> Perfect for managing reservations for shared resources like cars, equipment, or spaces.</li>
-</ul>
-
-
 `,
-      imageUrl:
-        'https://www.synnexmetrodata.com/wp-content/uploads/2024/04/3.png',
-      imageBigUrl:
-        'https://www.ibexa.co/var/site/storage/images/_aliases/ibexa_content_full/3/4/1/0/300143-1-eng-GB/d4255a27c1fa-AdobeStock_261705271_What-is-an-API.jpeg',
-      projectUrl: 'https://reservation-api-gamma.vercel.app/reservations',
-      gitHubUrl: 'https://github.com/Anatolii-Stoliarenko/reservation-api',
     },
     {
       id: '5',
@@ -146,8 +75,6 @@ export class ProjectService {
       technology: 'Angular Rest API <em>NgRx</em> ',
       description: `
 <p>The <strong>Booking App</strong> is a comprehensive web-based solution designed to streamline the process of booking and managing reservations across various venues, events, or resources. Built using modern web technologies, this app enables users to efficiently create, manage, and track reservations while offering administrative controls for managing users, spaces, and schedules. Whether it's for event spaces, meeting rooms, or resource allocation, the app is tailored to provide a seamless user experience and maximize resource utilization.</p>
-
-<h5>Key Features:</h5>
 
 <h6>User Authentication and Management:</h6>
 <ul>

@@ -2,7 +2,7 @@ export interface Project {
   id: string; // Unique identifier for the project
   title: string; // Title of the project
   description: string; // Detailed description of the project
-  imageUrl: string; // URL to the image associated with the project
+  imageUrl?: string; // URL to the image associated with the project
   imageBigUrl?: string;
   projectUrl: string; // URL to the project itself
   gitHubUrl: string;

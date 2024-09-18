@@ -18,11 +18,11 @@ export class ResumeService {
       id: '1',
       startDate: '2023/11',
       endDate: 'Present',
-      jobTitle: 'Web Developer',
+      jobTitle: 'Full-stack Developer',
       companyName: 'Freelance',
       location: 'Warsaw, Mazowieckie, Poland',
       description:
-        'Working as a freelance web developer handling various projects involving frontend development using modern web technologies.',
+        'Working as a freelance full-stack web developer, handling various projects involving both frontend and backend development. Utilized modern web technologies to build scalable, responsive applications, integrating frontend frameworks with robust server-side solutions. Experience includes developing RESTful APIs, managing databases, and ensuring efficient deployment processes.',
     },
     {
       id: '3',
@@ -32,22 +32,22 @@ export class ResumeService {
       companyName: 'Basement Sp. z o.o.',
       location: 'Warsaw, Poland',
       description:
-        'Focused on Angular development for software projects in the banking and transportation sectors. Utilized Angular, NgRx (RxJs), TypeScript, HTML, SCSS for front-end development.',
+        'Focused on developing dynamic and responsive front-end applications in the banking and transportation sectors. Leveraged Angular, NgRx (RxJs), TypeScript, HTML, and SCSS to build robust user interfaces and manage complex state management. Contributed to optimizing performance and improving user experience through well-structured, scalable code.',
     },
     {
       id: '2',
-      startDate: '2022/10',
+      startDate: '2019/02',
       endDate: '2023/03',
       jobTitle: 'Computer Scientist',
       companyName: 'Olsvit Sp. z o.o.',
       location: 'Warsaw, Poland',
       description:
-        'Computer Scientist with expertise in algorithm design, data structures, software development, and problem-solving. Skilled in applying computational theory and advanced programming techniques to innovate and optimize systems across various domains.',
+        'Assisted in office tasks, including managing printers, troubleshooting network issues, and maintaining computer systems. Leveraged free time to develop programming skills, working on various software projects and continuously improving technical expertise.',
     },
     {
       id: '3',
-      startDate: '2012/02',
-      endDate: '2013/08',
+      startDate: '2012/05',
+      endDate: '2015/12',
       jobTitle: 'Editor of the publishing house',
       companyName: 'National University',
       location: 'Uzhhorod, Ukraine',
@@ -112,41 +112,41 @@ export class ResumeService {
   ];
 
   programmingSkills: Skill[] = [
+    { id: '16', title: 'JavaScript' },
+    { id: '16', title: 'TypeScript' },
+    { id: '11', title: 'Angular' },
+
     { id: '7', title: 'HTML' },
     { id: '8', title: 'CSS' },
     { id: '16', title: 'SCSS' },
 
     { id: '16', title: 'SASS' },
-    { id: '16', title: 'JavaScript' },
-    { id: '16', title: 'TypeScript' },
-
-    { id: '9', title: 'Node.js' },
-    { id: '10', title: 'Swagger' },
-    { id: '11', title: 'Angular' },
-
-    { id: '12', title: 'RxJS' },
-    { id: '12', title: 'NgRx' },
+    { id: '11', title: 'Angular Materials' },
     { id: '11', title: 'Angular CLI' },
 
-    { id: '22', title: 'RESTful APIs' },
-    { id: '14', title: 'Git' },
-    { id: '15', title: 'Hg Mercurial' },
-
-    { id: '29', title: 'Jira' },
-    { id: '31', title: 'Figma' },
-    { id: '13', title: 'Docker' },
-
     { id: '17', title: 'Bootstrap' },
-    { id: '18', title: 'Webpack' },
-    { id: '26', title: 'MongoDB' },
+    { id: '31', title: 'Figma' },
+    { id: '12', title: 'RxJS' },
 
+    { id: '12', title: 'NgRx' },
+    { id: '9', title: 'Node.js' },
+    { id: '22', title: 'RESTful API' },
+
+    { id: '26', title: 'MongoDB' },
     { id: '27', title: 'SQL' },
+    { id: '10', title: 'Swagger' },
+
+    { id: '13', title: 'Docker' },
+    { id: '18', title: 'Webpack' },
+    { id: '14', title: 'Git' },
+
+    { id: '15', title: 'Hg Mercurial' },
+    { id: '29', title: 'Jira' },
     { id: '32', title: 'Adobe XD' },
-    { id: '33', title: 'VSCode' },
 
     { id: '35', title: 'Prettier' },
+    { id: '35', title: 'Vercel' },
     { id: '36', title: 'Netlify' },
-    { id: '36', title: 'GitHub' },
   ];
   professionalSkills: Skill[] = [
     { id: '13', title: 'Communication' },

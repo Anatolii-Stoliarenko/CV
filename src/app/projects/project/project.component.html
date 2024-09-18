@@ -64,8 +64,6 @@
       </div>
     </div>
     <div class="text">
-      <img class="inset" [src]="project.imageUrl" alt="" />
-      <div [innerHTML]="project.description"></div>
       <!-- buttons to site and GitHub -->
       <div id="container">
         <button class="learn-more" (click)="openSite()">
@@ -82,6 +80,9 @@
           <span class="button-text">HitHub</span>
         </button>
       </div>
+      <img class="inset" [src]="project.imageUrl" alt="" />
+
+      <div [innerHTML]="project.description"></div>
     </div>
   </div>
 </div>
